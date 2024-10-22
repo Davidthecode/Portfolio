@@ -1,6 +1,11 @@
 const Main = () => {
     const blogs = [
         {
+            title: "Write Type-Safe Unit Tests in React with Jest(ts-jest) and TypeScript",
+            preview: "In this guide, I’m going to walk you through how to set up and write typed unit tests in React with Jest(ts-jest) and TypeScript...",
+            link: "https://pulse-blog.vercel.app/@ajiboladavid0963/write-type-safe-unit-tests-in-react-with-jestts-jest-and-typescript-veRVMzgq2HWv"
+        },
+        {
             title: "Custom hooks, Use Context, and States in React",
             preview: "One time, I ran into a problem in my React project and was working on it for a while..",
             link: "https://pulse-blog.vercel.app/@ajiboladavid0963/custom-hooks-use-context-and-states-in-react-mOwsn3iuCULl"
@@ -10,11 +15,6 @@ const Main = () => {
             preview: "TypeScript and JavaScript are two popular programming languages used in web development...",
             link: "https://pulse-blog.vercel.app/@ajiboladavid0963/typescript-vs-javascript-whats-the-difference-wCKZXFdGqvbX"
         },
-        {
-            title: "Building a serverless web application with React and Firebase",
-            preview: "A serverless web application is a web application built using a serverless architecture...",
-            link: "https://davidts.hashnode.dev/building-a-serverless-web-application-with-react-and-firebase"
-        }
     ]
 
     return (
@@ -23,7 +23,7 @@ const Main = () => {
             <section className="flex flex-col gap-4">
                 <h1 className="text-3xl font-semibold">Hi, I'm David</h1>
                 <p className="opacity-70">
-                   I enjoy building robust software systems that scale. although i'm particular about front-end development, I enjoy diving into all aspects of web development. Currently, I'm digging into real-time updates and performance optimization while contributing to open-source projects I care about.
+                    I enjoy building robust software systems that scale. although i'm particular about front-end development, I enjoy diving into all aspects of web development. Currently, I'm digging into real-time updates and performance optimization while contributing to open-source projects I care about.
                 </p>
                 <p className="opacity-70">Feel free to message me on Twitter or Discord!</p>
             </section>
