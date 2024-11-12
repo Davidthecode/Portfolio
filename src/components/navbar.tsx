@@ -3,7 +3,6 @@ import animeImage from "../assets/anime-img.jpg";
 const Navbar = () => {
   const links = [
     { name: "Github", href: "https://github.com/Davidthecode" },
-    { name: "Linkedin", href: "https://www.linkedin.com/in/david-ajibola" },
     { name: "Twitter", href: "https://twitter.com/DavidAjibola_" },
   ];
 
