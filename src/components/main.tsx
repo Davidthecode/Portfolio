@@ -7,7 +7,7 @@ const Main = () => {
             <section className="flex flex-col gap-4">
                 <h1 className="text-3xl font-semibold">Hi, I'm David</h1>
                 <p className="opacity-70">
-                    I enjoy building robust software systems that scale. As a full-stack developer, I’m passionate about diving into all aspects of web development. Currently, I'm exploring distributed systems, real-time updates, and performance optimization while contributing to open-source projects I care about.
+                    I enjoy building robust software systems that scale. I'm passionate about solving problems and building impactful software that matters. I'm currently exploring distributed systems and performance optimization while contributing to open-source projects I care about.
                 </p>
                 <p className="opacity-70">Feel free to message me on Twitter or Discord!</p>
             </section>
