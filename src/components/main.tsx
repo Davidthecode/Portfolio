@@ -30,7 +30,7 @@ const Main = () => {
                 <div className="flex flex-col items-center space-y-2">
                     <p className="bg-black text-white w-fit rounded-md py-1 px-3 text-sm">My Projects</p>
                     <h1 className="text-4xl font-bold text-center">Check out my latest work</h1>
-                    <p className="text-center text-lg opacity-50">I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
+                    <p className="text-center font-light text-lg opacity-50">I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
                 </div>
                 <div className="flex flex-col justify-center flex-wrap gap-4 sm:gap-3 sm:flex-row items-center opacity-80 mt-3">
                     {projects.map((project) => (
@@ -100,7 +100,7 @@ const Main = () => {
                 <div className="flex flex-col items-center space-y-2">
                     <p className="bg-black text-white w-fit rounded-md py-1 px-3 text-sm">Contact</p>
                     <h1 className="text-4xl font-bold text-center">Get in Touch</h1>
-                    <p className="text-center text-lg opacity-50">
+                    <p className="text-center font-light text-lg opacity-50">
                         Want to chat? Shoot me a dm
                         <span className="hover:underline text-[#6161FF] hover:text-[#3B82F6] mx-2">
                             <a href="https://twitter.com/DavidAjibola_" target="_blank" rel="noopener noreferrer">
