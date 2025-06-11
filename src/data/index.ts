@@ -8,19 +8,19 @@ import tsJsImage from "../assets/ts-js-image.webp";
 export const projects = [
   {
     title: "Pulse",
-    about: "Pulse hooks you into a buzzing world of writers and readers, making it very simple to share your thoughts and vibe with ideas that stick.",
+    about: "A lightweight community-driven blogging platform.",
     image: pulseImage,
     link: "https://pulse-blog.vercel.app"
   },
   {
     title: "TaskMaster",
-    about: "Taskmaster is a modern platform for cross-functional work. It provides a seamless way to set tasks, track wins, and collaborate with others",
+    about: "A modern platform for cross-functional work.",
     image: TaskmasterImage,
     link: "https://taskmaster-pm.vercel.app"
   },
   {
     title: "jstp",
-    about: "JSTP is a lightweight OTP package built with TypeScript to simplify otp management.",
+    about: "A lightweight JavaScript OTP package.",
     image: jstpimage,
     link: "https://www.npmjs.com/package/@ajiboladavid/jstp"
   }
