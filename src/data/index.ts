@@ -4,6 +4,7 @@ import jstpimage from "../assets/jstp-image.png";
 import jestTsImage from "../assets/jest-ts-image.webp";
 import customHooksImage from "../assets/custom-hooks-image.webp";
 import tsJsImage from "../assets/ts-js-image.webp";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export const projects = [
   {
@@ -62,3 +63,9 @@ export const skills = [
   "Jest",
   "storybook"
 ];
+
+export const contacts = [
+  { name: "github", icon: Github, href: "https://github.com/Davidthecode" },
+  { name: "linkedin", icon: Linkedin, href: "https://www.linkedin.com/in/david-ajibola/" },
+  { name: "twitter", icon: Twitter, href: "https://twitter.com/DavidAjibola_" },
+]

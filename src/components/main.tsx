@@ -1,24 +1,26 @@
-import { projects, blogs, skills } from "../data";
+import { projects, blogs, skills, contacts } from "../data";
+import ThemeToggle from "./themeToggle";
+import { MoveUpRight } from "lucide-react";
 
 const Main = () => {
     return (
-        <main className="flex flex-col mt-12 mb-40">
+        <main className="flex flex-col pt-12 pb-6">
             {/* hero */}
             <section className="flex flex-col ">
                 <h1 className="text-xl font-semibold">About</h1>
                 <p className="opacity-50 text-sm">
                     I mess around with stuff that scales big, runs fast, and doesn’t flop over when you poke it.
                 </p>
-                <p className="opacity-50 text-sm">
-                    Feel free to message me on
-                    <span className="hover:underline text-[#3f3fcc] hover:text-[#3B82F6] mx-1">
-                        <a href="https://twitter.com/DavidAjibola_" target="_blank" rel="noopener noreferrer">
+                <p>
+                    <span className="opacity-50 text-sm">Feel free to message me on</span>
+                    <span className="py-[3px] px-[10px] font-light rounded-3xl bg-[#F4F4F5] hover:bg-black  dark:bg-[#3F3F46] text-black text-[11px] w-fit ml-2">
+                        <a href="https://twitter.com/DavidAjibola_" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                             Twitter
                         </a>
                     </span>
-                    or
-                    <span className="hover:underline text-[#3f3fcc] hover:text-[#3B82F6] mx-1">
-                        <a href="https://discordapp.com/users/1130889766666240111" target="_blank" rel="noopener noreferrer">
+                    <span className="opacity-50 text-sm"> or</span>
+                    <span className="py-[3px] px-[10px] font-light rounded-3xl bg-[#F4F4F5] hover:bg-black dark:bg-[#3F3F46] text-black text-[11px] w-fit ml-2">
+                        <a href="https://discordapp.com/users/1130889766666240111" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                             Discord!
                         </a>
                     </span>
@@ -28,14 +30,14 @@ const Main = () => {
             {/* Projects */}
             <section className="flex flex-col gap-6 mt-16">
                 <div className="flex flex-col items-center space-y-2">
-                    <p className="bg-black text-white w-fit rounded-md py-1 px-3 text-sm">My Projects</p>
+                    <p className="bg-black dark:bg-[#3F3F46] text-white w-fit rounded-md py-1 px-3 text-sm">My Projects</p>
                     <h1 className="text-4xl font-bold text-center">Check out my latest work</h1>
                     <p className="text-center font-light text-lg opacity-50">I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
                 </div>
                 <div className="flex flex-col justify-center flex-wrap gap-4 sm:gap-3 sm:flex-row items-center opacity-80 mt-3">
                     {projects.map((project) => (
                         <article
-                            className="group flex flex-col gap-2 border border-gray-300 border-opacity-70 hover:shadow-sm px-4 py-3 rounded-md w-full sm:w-[49%] h-fit sm:h-[17rem]"
+                            className="group flex flex-col gap-2 border border-gray-300 dark:border-gray-50/20 border-opacity-70 hover:shadow-sm px-4 py-3 rounded-md w-full sm:w-[49%] h-fit sm:h-[17rem]"
                             key={project.link}
                         >
                             <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -88,7 +90,7 @@ const Main = () => {
                 <h2>Skills</h2>
                 <div className="flex flex-wrap items-center gap-[6px]">
                     {skills.map((skill) => (
-                        <div className="py-[1px] px-[10px] font-light rounded-3xl bg-[#F4F4F5] text-black text-[11px] w-fit">
+                        <div className="py-[1px] px-[10px] font-light rounded-3xl bg-[#F4F4F5] dark:bg-[#3F3F46] text-black dark:text-white text-[11px] w-fit">
                             {skill}
                         </div>
                     ))}
@@ -98,7 +100,7 @@ const Main = () => {
             {/* Contact */}
             <section className="flex flex-col gap-4 mt-20">
                 <div className="flex flex-col items-center space-y-2">
-                    <p className="bg-black text-white w-fit rounded-md py-1 px-3 text-sm">Contact</p>
+                    <p className="bg-black dark:bg-[#3F3F46] text-white w-fit rounded-md py-1 px-3 text-sm">Contact</p>
                     <h1 className="text-4xl font-bold text-center">Get in Touch</h1>
                     <p className="text-center font-light text-lg opacity-50">
                         Want to chat? Shoot me a dm
@@ -110,6 +112,23 @@ const Main = () => {
                         to collaborate on artistic projects, bold ideas, or just to say hello.
                     </p>
                 </div>
+            </section>
+
+            <section className="flex justify-between mt-14 border-t border-gray-100 border-opacity-70 dark:border-opacity-10 pt-2">
+                <div className="flex flex-wrap items-center gap-[6px]">
+                    {contacts.map((contact) => (
+                        <a
+                            href={contact.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center py-[2.5px] px-[10px] font-light rounded-3xl bg-[#efeff0] hover:bg-black hover:text-white dark:bg-[#3F3F46] dark:hover:bg-[#57575d] text-black dark:text-white text-[13px] w-fit"
+                        >
+                            <span>{contact.name}</span>
+                            <span><MoveUpRight size={12} strokeWidth={1.5} /></span>
+                        </a>
+                    ))}
+                </div>
+                <ThemeToggle />
             </section>
         </main>
     );

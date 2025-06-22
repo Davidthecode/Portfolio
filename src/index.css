@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+body {
+  @apply bg-white dark:bg-[#09090B];
+}
+
+/* Prevent transition on page load */
+.preload * {
+  transition: none !important;
+}
+
+button {
+  @apply transition-all duration-200;
+}
+
+a {
+  @apply text-black/80 dark:text-white/80;
+}
+
+a:hover {
+  @apply text-black/100 dark:text-white/100;
+}
+
+span:hover a {
+  @apply text-white;
+}
+
+h1 {
+  @apply opacity-90;
+}
