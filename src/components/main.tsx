@@ -104,8 +104,8 @@ const Main = () => {
                     <h1 className="text-4xl font-bold text-center">Get in Touch</h1>
                     <p className="text-center font-light text-lg opacity-50">
                         Want to chat? Shoot me a dm
-                        <span className="hover:underline text-[#6161FF] hover:text-[#3B82F6] mx-2">
-                            <a href="https://twitter.com/DavidAjibola_" target="_blank" rel="noopener noreferrer">
+                        <span className="hover:underline mx-2">
+                            <a href="https://twitter.com/DavidAjibola_" target="_blank" rel="noopener noreferrer" className="hover:text-black">
                                 on Twitter
                             </a>
                         </span>
